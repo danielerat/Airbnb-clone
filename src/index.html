@@ -37,7 +37,7 @@
         <!-- Bottom Nav section -->
         <div class="border-t p-2">
           <div class="flex items-center justify-center gap-3">
-            <div class="flex items-center gap-2 text-xs">
+            <div class="flex items-center gap-2 overflow-x-auto text-xs">
               <div
                 class="flex flex-col items-center gap-2 border-b-2 border-black p-2 font-bold"
               >
@@ -59,9 +59,7 @@
                 </div>
                 <div>Breakfast & Bed</div>
               </div>
-              <div
-                class="flex flex-col items-center gap-2 border-b-2 border-black p-2 font-bold"
-              >
+              <div class="flex flex-col items-center gap-2 p-2 font-bold">
                 <div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -80,9 +78,7 @@
                 </div>
                 <div>Breakf</div>
               </div>
-              <div
-                class="flex flex-col items-center gap-2 border-b-2 border-black p-2 font-bold"
-              >
+              <div class="flex flex-col items-center gap-2 p-2 font-bold">
                 <div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -101,9 +97,7 @@
                 </div>
                 <div>Breakf</div>
               </div>
-              <div
-                class="flex flex-col items-center gap-2 border-b-2 border-black p-2 font-bold"
-              >
+              <div class="flex flex-col items-center gap-2 p-2 font-bold">
                 <div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -122,9 +116,7 @@
                 </div>
                 <div>Breakf</div>
               </div>
-              <div
-                class="flex flex-col items-center gap-2 border-b-2 border-black p-2 font-bold"
-              >
+              <div class="flex flex-col items-center gap-2 p-2 font-bold">
                 <div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -143,9 +135,7 @@
                 </div>
                 <div>Breakf</div>
               </div>
-              <div
-                class="flex flex-col items-center gap-2 border-b-2 border-black p-2 font-bold"
-              >
+              <div class="flex flex-col items-center gap-2 p-2 font-bold">
                 <div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -164,9 +154,7 @@
                 </div>
                 <div>Breakf</div>
               </div>
-              <div
-                class="flex flex-col items-center gap-2 border-b-2 border-black p-2 font-bold"
-              >
+              <div class="flex flex-col items-center gap-2 p-2 font-bold">
                 <div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -185,9 +173,7 @@
                 </div>
                 <div>Breakf</div>
               </div>
-              <div
-                class="flex flex-col items-center gap-2 border-b-2 border-black p-2 font-bold"
-              >
+              <div class="flex flex-col items-center gap-2 p-2 font-bold">
                 <div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -206,9 +192,7 @@
                 </div>
                 <div>Breakf</div>
               </div>
-              <div
-                class="flex flex-col items-center gap-2 border-b-2 border-black p-2 font-bold"
-              >
+              <div class="flex flex-col items-center gap-2 p-2 font-bold">
                 <div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -227,9 +211,7 @@
                 </div>
                 <div>Breakf</div>
               </div>
-              <div
-                class="flex flex-col items-center gap-2 border-b-2 border-black p-2 font-bold"
-              >
+              <div class="flex flex-col items-center gap-2 p-2 font-bold">
                 <div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -246,14 +228,18 @@
                     />
                   </svg>
                 </div>
-                <div>Breakfast & Bed</div>
+                <div>Bed</div>
               </div>
-              <div class="h-7 w-7 rounded-full border border-black p-2">
+              <div
+                class="hidden h-7 w-7 rounded-full border border-black p-2 md:block"
+              >
                 &gt;
               </div>
             </div>
             <!-- Filter -->
-            <div class="rounded-full border px-5 py-2">🌐 Filters</div>
+            <div class="hidden rounded-full border px-5 py-2 md:block">
+              Filters
+            </div>
           </div>
         </div>
       </nav>
@@ -261,7 +247,14 @@
 
     <!-- House Images Section -->
     <section>
-      <!-- container -->
+      <div class="flex justify-center border p-10">
+        <div class="flex gap-4 rounded-xl border p-5">
+          <div class="font-bold">Display total price</div>
+          <div class="border-l px-2">include all fees before taxes</div>
+          <div class="">BTN</div>
+        </div>
+      </div>
+      <!-- Grid containercontainer -->
       <div
         class="grid grid-cols-1 gap-4 border border-black sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
       >
@@ -297,7 +290,7 @@
       </div>
     </section>
 
-    <footer class="fixed bottom-0 flex h-16 w-full border bg-gray-400 px-5">
+    <footer class="fixed bottom-0 flex h-16 w-full border bg-white px-5">
       <div
         class="flex w-full items-center justify-between border border-t-2 border-red-400"
       >
