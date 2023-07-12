@@ -251,16 +251,37 @@
     <section class="relative">
       <!-- show map div -->
       <div
-        class="fixed bottom-20 left-1/2 right-1/2 w-max cursor-pointer rounded-full bg-gray-900 p-3 text-xs font-bold text-white hover:scale-110"
+        class="fixed bottom-20 left-1/2 right-1/2 flex w-28 cursor-pointer justify-center gap-2 rounded-full bg-gray-900 p-2 px-3 text-xs font-bold text-white hover:scale-110"
       >
-        show me 🌐
+        <span>show me</span>
+        <span
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="h-4 w-4"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M8.161 2.58a1.875 1.875 0 011.678 0l4.993 2.498c.106.052.23.052.336 0l3.869-1.935A1.875 1.875 0 0121.75 4.82v12.485c0 .71-.401 1.36-1.037 1.677l-4.875 2.437a1.875 1.875 0 01-1.676 0l-4.994-2.497a.375.375 0 00-.336 0l-3.868 1.935A1.875 1.875 0 012.25 19.18V6.695c0-.71.401-1.36 1.036-1.677l4.875-2.437zM9 6a.75.75 0 01.75.75V15a.75.75 0 01-1.5 0V6.75A.75.75 0 019 6zm6.75 3a.75.75 0 00-1.5 0v8.25a.75.75 0 001.5 0V9z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </span>
       </div>
 
       <div class="flex justify-center border p-10">
         <div class="flex gap-4 rounded-xl border p-5">
           <div class="font-bold">Display total price</div>
           <div class="border-l px-2">include all fees before taxes</div>
-          <div class="">BTN</div>
+          <div class="">
+            <label class="relative inline-flex cursor-pointer items-center">
+              <input type="checkbox" value="" class="peer sr-only" />
+              <div
+                class="peer h-6 w-11 rounded-full bg-gray-200 after:absolute after:left-[2px] after:top-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all after:content-[''] peer-checked:bg-black peer-checked:after:translate-x-full peer-checked:after:border-white peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:border-gray-600 dark:bg-gray-700 dark:peer-focus:ring-blue-800"
+              ></div>
+            </label>
+          </div>
         </div>
       </div>
       <!-- Grid containercontainer -->
@@ -359,22 +380,104 @@
       </div>
     </section>
 
-    <footer class="fixed bottom-0 flex h-16 w-full border bg-white px-5">
-      <div
-        class="flex w-full items-center justify-between border border-t-2 border-red-400"
-      >
-        <div class="flex gap-4 border">
+    <footer class="fixed bottom-0 flex h-14 w-full border bg-white px-5">
+      <div class="flex w-full items-center justify-between">
+        <div class="flex items-center gap-4 text-base text-gray-600">
           <div>@2023 Air</div>
-          <div>Term</div>
-          <div>Sitemap</div>
-          <div>Privacy</div>
-          <div>Your Privacy</div>
-          <div>Destination</div>
+
+          <div class="cursor-pointer hover:underline">Term</div>
+
+          <div class="cursor-pointer hover:underline">Sitemap</div>
+
+          <div class="cursor-pointer hover:underline">Privacy</div>
+
+          <div class="flex cursor-pointer items-center gap-1 hover:underline">
+            Your Privacy
+            <svg width="26" height="12" fill="none">
+              <rect
+                x="0.5"
+                y="0.5"
+                width="25"
+                height="11"
+                rx="5.5"
+                fill="#fff"
+              ></rect>
+              <path d="M14 1h7a5 5 0 010 10H11l3-10z" fill="#06F"></path>
+              <path
+                d="M4.5 6.5l1.774 1.774a.25.25 0 00.39-.049L9.5 3.5"
+                stroke="#06F"
+                stroke-linecap="round"
+              ></path>
+              <path
+                d="M16.5 3.5L19 6m0 0l2.5 2.5M19 6l2.5-2.5M19 6l-2.5 2.5"
+                stroke="#fff"
+                stroke-linecap="round"
+              ></path>
+              <rect
+                x="0.5"
+                y="0.5"
+                width="25"
+                height="11"
+                rx="5.5"
+                stroke="#06F"
+              ></rect>
+            </svg>
+          </div>
+
+          <div class="cursor-pointer hover:underline">Destination</div>
         </div>
-        <div class="flex border">
-          <div>🌐 English</div>
-          <div>$ USD</div>
-          <div>Support Resource</div>
+        <div class="flex gap-3 p-2 text-xs font-bold">
+          <div class="flex cursor-pointer gap-1 hover:underline">
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="h-4 w-4"
+              >
+                <path
+                  d="M21.721 12.752a9.711 9.711 0 00-.945-5.003 12.754 12.754 0 01-4.339 2.708 18.991 18.991 0 01-.214 4.772 17.165 17.165 0 005.498-2.477zM14.634 15.55a17.324 17.324 0 00.332-4.647c-.952.227-1.945.347-2.966.347-1.021 0-2.014-.12-2.966-.347a17.515 17.515 0 00.332 4.647 17.385 17.385 0 005.268 0zM9.772 17.119a18.963 18.963 0 004.456 0A17.182 17.182 0 0112 21.724a17.18 17.18 0 01-2.228-4.605zM7.777 15.23a18.87 18.87 0 01-.214-4.774 12.753 12.753 0 01-4.34-2.708 9.711 9.711 0 00-.944 5.004 17.165 17.165 0 005.498 2.477zM21.356 14.752a9.765 9.765 0 01-7.478 6.817 18.64 18.64 0 001.988-4.718 18.627 18.627 0 005.49-2.098zM2.644 14.752c1.682.971 3.53 1.688 5.49 2.099a18.64 18.64 0 001.988 4.718 9.765 9.765 0 01-7.478-6.816zM13.878 2.43a9.755 9.755 0 016.116 3.986 11.267 11.267 0 01-3.746 2.504 18.63 18.63 0 00-2.37-6.49zM12 2.276a17.152 17.152 0 012.805 7.121c-.897.23-1.837.353-2.805.353-.968 0-1.908-.122-2.805-.353A17.151 17.151 0 0112 2.276zM10.122 2.43a18.629 18.629 0 00-2.37 6.49 11.266 11.266 0 01-3.746-2.504 9.754 9.754 0 016.116-3.985z"
+                />
+              </svg>
+            </span>
+            <span> English(US) </span>
+          </div>
+          <div class="flex cursor-pointer gap-1 hover:underline">
+            <span
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="h-4 w-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+            </span>
+            <span>USD</span>
+          </div>
+          <div class="flex cursor-pointer gap-1 hover:underline">
+            <span> Support &amp; Resource </span>
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="h-4 w-4"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M11.47 7.72a.75.75 0 011.06 0l7.5 7.5a.75.75 0 11-1.06 1.06L12 9.31l-6.97 6.97a.75.75 0 01-1.06-1.06l7.5-7.5z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </span>
+          </div>
         </div>
       </div>
     </footer>
