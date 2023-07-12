@@ -4,11 +4,45 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="../tailwindstyle.css" rel="stylesheet" />
+    <link href="./tailwindstyle.css" rel="stylesheet" />
     <script defer src="index.js"></script>
     <style></style>
   </head>
   <body>
-    <section></section>
+    <!-- House Images Section -->
+    <section>
+      <!-- container -->
+      <div
+        class="grid grid-cols-1 gap-4 border border-black sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
+      >
+        <div
+          class="relative flex flex-col justify-between border border-red-600 p-5"
+        >
+          <div
+            class="relative h-64 w-full overflow-hidden rounded-lg border border-black"
+          >
+            <img
+              src="https://a0.muscache.com/im/pictures/5ba59478-0416-4fac-8661-6c976e9f262b.jpg?im_w=720"
+              class="w-cover h-full object-cover"
+            />
+            <span class="absolute right-7 top-7">💖</span>
+            <div class="absolute bottom-5 left-1/2 flex gap-5 border">
+              <div class="h-2 w-2 rounded-full bg-gray-100"></div>
+              <div class="h-2 w-2 rounded-full bg-gray-100"></div>
+              <div class="h-2 w-2 rounded-full bg-gray-100"></div>
+            </div>
+          </div>
+          <div class="border p-2">
+            <p class="font-bold">Nairobi, Kenya</p>
+            <p class="text-gray-700">Hosted by Susan</p>
+            <p class="text-gray-700">Jul 14-32</p>
+            <p class="mt-2 font-bold">$115 night</p>
+          </div>
+        </div>
+        <div class="border">x</div>
+        <div class="border">x</div>
+        <div class="border">x</div>
+      </div>
+    </section>
   </body>
 </html>
